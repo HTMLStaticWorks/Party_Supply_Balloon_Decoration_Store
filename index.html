@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <link rel="icon" type="image/png" href="assets/images/marionette-logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎭 PUPPET | Magical Storytelling For All Ages</title>
+    <title>PUPPET | Magical Storytelling For All Ages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto-logical mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="shows.html">Shows</a></li>
@@ -57,7 +58,7 @@
         <div class="container position-relative z-3 pt-5 reveal">
             <span class="badge bg-warning text-dark px-3 py-2 mb-3 rounded-pill">EXPERIENCE THE MAGIC</span>
             <h1 class="display-1 fw-bold mb-4">Step Into a World of <br><span class="text-warning">Puppetry Magic
-                    🎭</span></h1>
+                    ??</span></h1>
             <p class="lead mb-5 opacity-75 max-width-600 mx-auto">Discover a whimsical theater where strings tell
                 stories, <br>imaginations take flight, and magic is just a pull away.</p>
             <div class="d-flex justify-content-center gap-3">
@@ -71,20 +72,21 @@
 
     <section id="featured" class="py-section">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5 reveal">
+            <div class="text-center mb-5 reveal">
                 <div>
                     <span class="text-warning fw-bold text-uppercase small tracking-widest mb-2 d-block">The Main
                         Stage</span>
                     <h2 class="display-4 fw-bold">Featured <span class="text-warning">Performances</span></h2>
                     <p class="text-muted">Hand-crafted stories for curious souls of all ages.</p>
                 </div>
-                <a href="shows.html" class="text-warning text-decoration-none fw-bold hover-translate-x transition-all">
+                <a href="shows.html"
+                    class="main-stage-link text-warning text-decoration-none fw-bold hover-translate-x transition-all d-inline-flex mt-3">
                     See All Shows <i class="bi bi-arrow-right ms-2-logical"></i>
                 </a>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4 reveal">
-                    <div class="anti-gravity-card h-100">
+            <div class="row g-4 featured-stage-grid">
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="anti-gravity-card featured-stage-card h-100">
                         <div class="puppet-string"></div>
                         <div class="overflow-hidden rounded-4 mb-4">
                             <img src="assets/images/show1.png" alt="The Wood-Witch's Secret"
@@ -93,7 +95,7 @@
                         <h3 class="h4 my-2">The Wood-Witch's Secret</h3>
                         <p class="small text-muted mb-4">An enchanting musical journey through the heart of the
                             cardboard forest.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
                             <span class="fw-bold fs-5 text-warning">$15.00</span>
                             <a href="show-details.html"
                                 class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
@@ -101,8 +103,8 @@
                     </div>
                 </div>
                 <!-- ... other items removed for brevity in thinking but I will include them in write ... -->
-                <div class="col-md-4 reveal" style="transition-delay: 0.1s">
-                    <div class="anti-gravity-card h-100">
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s">
+                    <div class="anti-gravity-card featured-stage-card h-100">
                         <div class="puppet-string"></div>
                         <div class="overflow-hidden rounded-4 mb-4">
                             <img src="assets/images/show2.png" alt="Pinocchio Restrung"
@@ -111,15 +113,15 @@
                         <h3 class="h4 my-2">Pinocchio Restrung</h3>
                         <p class="small text-muted mb-4">A dramatic modern twist on the classic tale of strings and
                             freedom.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
                             <span class="fw-bold fs-5 text-warning">$18.00</span>
                             <a href="show-details.html"
                                 class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 reveal" style="transition-delay: 0.2s">
-                    <div class="anti-gravity-card h-100">
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s">
+                    <div class="anti-gravity-card featured-stage-card h-100">
                         <div class="puppet-string"></div>
                         <div class="overflow-hidden rounded-4 mb-4">
                             <img src="assets/images/show3.png" alt="The Space Trip"
@@ -128,7 +130,7 @@
                         <h3 class="h4 my-2">The Space Trip</h3>
                         <p class="small text-muted mb-4">An out-of-this-world adventure where felt astronauts touch the
                             stars.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
                             <span class="fw-bold fs-5 text-warning">$12.00</span>
                             <a href="show-details.html"
                                 class="btn btn-sm btn-outline-warning rounded-pill px-4 py-2 fw-bold">Details</a>
@@ -139,17 +141,17 @@
         </div>
     </section>
 
-    <!-- 🛠️ NEW SECTION 1: THE ARTISAN'S WORKSHOP -->
+    <!-- ??? NEW SECTION 1: THE ARTISAN'S WORKSHOP -->
     <section class="py-section bg-secondary-stage overflow-hidden">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 reveal">
-                    <div class="workshop-float">
+                    <div class="workshop-float text-center">
                         <img src="assets/images/workshop.png" alt="Workshop"
-                            class="img-fluid rounded-5 shadow-2xl border border-white border-opacity-10">
+                            class="img-fluid rounded-5 shadow-2xl border border-white border-opacity-10 mx-auto d-block">
                     </div>
                 </div>
-                <div class="col-lg-6 reveal" style="transition-delay: 0.2s">
+                <div class="col-lg-6 reveal workshop-copy" style="transition-delay: 0.2s">
                     <span class="text-warning fw-bold text-uppercase small tracking-widest mb-3 d-block">Behind the
                         Velvet Curtain</span>
                     <h2 class="display-4 fw-bold mb-4">The Magic of the <br><span class="text-warning">Artisan's
@@ -175,7 +177,7 @@
         </div>
     </section>
 
-    <!-- 📜 NEW SECTION 2: PUPPET WISDOM -->
+    <!-- ?? NEW SECTION 2: PUPPET WISDOM -->
     <section class="py-section position-relative">
         <div class="container text-center reveal">
             <div class="wisdom-sparkle p-5 bg-glass rounded-5 border border-white border-opacity-10">
@@ -194,7 +196,7 @@
         </div>
     </section>
 
-    <!-- 🎟️ NEW SECTION 3: THE ENCORE CLUB -->
+    <!-- ??? NEW SECTION 3: THE ENCORE CLUB -->
     <section class="py-section bg-curtain-texture">
         <div class="container">
             <div class="row align-items-center">
@@ -221,22 +223,23 @@
                                     class="small fw-bold">Member Deals</span></div>
                         </div>
                     </div>
-                    <a href="signup.html" class="btn btn-warning btn-lg px-5 py-3 fw-bold text-dark rounded-pill">Become
+                    <a href="signup.html"
+                        class="encore-cta btn btn-warning btn-lg px-5 py-3 fw-bold text-dark rounded-pill">Become
                         a Patron</a>
                 </div>
-                <div class="col-lg-5 d-none d-lg-block reveal" style="transition-delay: 0.4s">
+                <div class="col-lg-5 reveal mt-4 mt-lg-0" style="transition-delay: 0.4s">
                     <img src="assets/images/club.png" alt="Encore Club" class="img-fluid rounded-5 shadow-2xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🎪 EVENT BANNER / CTA -->
-    <section class="py-section text-center text-white overflow-hidden position-relative">
+    <!-- ?? EVENT BANNER / CTA -->
+    <section class="py-section text-center text-white bg-dark overflow-hidden position-relative">
         <div class="container position-relative z-1 reveal">
             <h2 class="display-3 fw-bold mb-4">Ready to Join the Audience?</h2>
             <p class="lead mb-5 opacity-75">Tickets are selling fast for the Spring Festival!</p>
-            <div class="d-flex justify-content-center gap-4">
+            <div class="audience-cta-group d-flex justify-content-center gap-4">
                 <a href="pricing.html"
                     class="magnetic-btn btn btn-warning btn-lg px-5 py-3 fw-bold text-dark text-decoration-none">Book
                     Tickets Now</a>
@@ -247,15 +250,15 @@
         </div>
     </section>
 
-    <!-- 🎭 NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
-    <footer class="py-5 bg-dark border-top border-white border-opacity-10 mt-5">
+    <!-- ?? NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
+    <footer class="py-5 mt-5 border-top">
         <div class="container">
             <div class="row g-5">
                 <!-- Col 1: Branding & Socials -->
                 <div class="col-lg-4 reveal">
                     <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
                         <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
-                        <span class="fw-bold tracking-tight text-white fs-4">PUPPET</span>
+                        <span class="fw-bold tracking-tight">PUPPET</span>
                     </a>
                     <p class="text-muted mb-4 opacity-75">Bringing the magic of hand-crafted storytelling to the grand
                         stage. From classic marionettes to modern fantasies, every string tells a story.</p>
@@ -270,7 +273,7 @@
                 </div>
                 <!-- Col 2: Navigation -->
                 <div class="col-lg-2 reveal" style="transition-delay: 0.1s">
-                    <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+                    <h5 class="fw-bold mb-4 ">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="index.html"
                                 class="text-muted text-decoration-none hover-warning">Home</a></li>
@@ -284,7 +287,7 @@
                 </div>
                 <!-- Col 3: Community/Resources -->
                 <div class="col-lg-2 reveal" style="transition-delay: 0.2s">
-                    <h5 class="fw-bold mb-4 text-white">The Stage</h5>
+                    <h5 class="fw-bold mb-4 ">The Stage</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="blog.html"
                                 class="text-muted text-decoration-none hover-warning">Blog</a></li>
@@ -298,18 +301,18 @@
                 </div>
                 <!-- Col 4: Newsletter Subscription -->
                 <div class="col-lg-4 reveal" style="transition-delay: 0.3s">
-                    <h5 class="fw-bold mb-4 text-white">Newsletter</h5>
+                    <h5 class="fw-bold mb-4 ">Newsletter</h5>
                     <p class="text-muted mb-4 opacity-75">Sign up for exclusive show alerts and theater news.</p>
                     <div class="input-group mb-3 bg-glass rounded-4 p-1">
                         <input type="email"
-                            class="form-control bg-transparent border-0 text-white placeholder-muted px-3"
+                            class="form-control bg-transparent border-0 placeholder-muted px-3"
                             placeholder="Enter your email...">
                         <button class="btn btn-warning rounded-4 px-4" type="button"><i
                                 class="bi bi-send-fill"></i></button>
                     </div>
                 </div>
             </div>
-            <hr class="my-5 border-white border-opacity-10 text-white">
+            <hr class="my-5 text-muted opacity-25">
             <div class="row align-items-center reveal" style="transition-delay: 0.4s">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <p class="mb-0 text-muted small">&copy; 2026 PUPPET Theater Company. All rights reserved.</p>

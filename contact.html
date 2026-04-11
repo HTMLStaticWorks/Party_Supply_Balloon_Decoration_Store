@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <link rel="icon" type="image/png" href="assets/images/marionette-logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | 🎭 PUPPET</title>
+    <title>PUPPET</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -33,11 +34,12 @@
                     <li class="nav-item"><a class="nav-link" href="shows.html">Shows</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+                    </li>
                 </ul>
                 <div class="d-flex align-items-center ms-lg-4-logical mt-3 mt-lg-0">
                     <a href="login.html"
-                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical">Login</a>
+                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical btn-hover-highlight">Login</a>
                     <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
                             id="rtl-toggle"><label class="form-check-label small" for="rtl-toggle">RTL</label></div>
                     <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
@@ -54,14 +56,16 @@
             style="background: url('assets/images/workshop.png') center/cover; opacity: 0.6;"></div>
         <div class="stage-layer stage-depth-2 position-absolute w-100 h-100"
             style="background: var(--puppet-gradient-stage);"></div>
-        <div class="container position-relative z-3 pt-5 reveal">
-            <h1 class="display-3 fw-bold mb-4">Pull the <span class="text-warning text-shadow">Strings</span></h1>
-            <p class="lead text-muted max-width-600 mx-auto">Have a question, a proposal, or a story to share? We are
+        <div class="position-absolute w-100 h-100 top-0 start-0 bg-dark opacity-50 z-2"></div>
+        <div class="container position-relative z-3 pt-5 reveal text-white text-shadow">
+            <h1 class="display-3 fw-bold mb-4">Pull the <span class="text-warning">Strings</span></h1>
+            <p class="lead mb-5 opacity-75 max-width-600 mx-auto">Have a question, a proposal, or a story to share? We
+                are
                 always listening.</p>
         </div>
     </header>
 
-    <!-- 🗺️ SECTION 1: THE GRAND ENTRANCE (Interactive Map) -->
+    <!-- ??? SECTION 1: THE GRAND ENTRANCE (Interactive Map) -->
     <section class="py-section">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -91,7 +95,7 @@
         </div>
     </section>
 
-    <!-- 📱 SECTION 2: THE SOCIAL STRING (Social Links) -->
+    <!-- ?? SECTION 2: THE SOCIAL STRING (Social Links) -->
     <section class="py-section bg-secondary-stage">
         <div class="container">
             <div class="row align-items-center flex-row-reverse g-5">
@@ -113,15 +117,16 @@
         </div>
     </section>
 
-    <!-- 🖋️ SECTION 3: WRITE A SECRET (Creative Form) -->
+    <!-- ??? SECTION 3: WRITE A SECRET (Creative Form) -->
     <section class="py-section bg-curtain-texture text-white">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 reveal secret-ink text-center">
-                    <img src="assets/images/contact-secret.png" alt="Secret" class="img-fluid rounded-4 mb-5 shadow-2xl"
-                        style="max-width: 400px;">
+                    <img src="assets/images/contact-secret.png" alt="Secret"
+                        class="img-fluid rounded-4 mb-5 shadow-2xl mx-auto d-block"
+                        style="max-width: 400px; width: 100%;">
                     <h2 class="display-3 fw-bold mb-4">Write a <span class="text-warning">Secret</span></h2>
-                    <p class="lead mb-5 opacity-75">Not a fan of regular forms? Send us a "secret" message—tell us what
+                    <p class="lead mb-5 opacity-75">Not a fan of regular forms? Send us a "secret" message�tell us what
                         stories you want to see, or how puppetry has changed your world.</p>
                     <form class="text-start bg-glass p-5 rounded-5 border border-white border-opacity-10">
                         <div class="mb-4">
@@ -133,9 +138,9 @@
                             <label class="form-label small text-warning fw-bold">THE SECRET MESSAGE</label>
                             <textarea
                                 class="form-control bg-transparent border-white border-opacity-20 text-white p-3 rounded-4"
-                                rows="5" placeholder="Once upon a time..."></textarea>
+                                rows="5"></textarea>
                         </div>
-                        <button class="btn btn-warning w-100 py-3 fw-bold text-dark rounded-pill hover-scale">Send into
+                        <button class="btn btn-warning w-100 py-3 fw-bold text-dark rounded-pill hover-scale btn-hover-highlight">Send into
                             the Shadows</button>
                     </form>
                 </div>
@@ -143,15 +148,15 @@
         </div>
     </section>
 
-    <!-- 🎭 NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
-    <footer class="py-5 bg-dark border-top border-white border-opacity-10 mt-5">
+    <!-- ?? NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
+    <footer class="py-5 mt-5 border-top">
         <div class="container">
             <div class="row g-5">
                 <!-- Col 1: Branding & Socials -->
                 <div class="col-lg-4 reveal">
                     <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
                         <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
-                        <span class="fw-bold tracking-tight text-white fs-4">PUPPET</span>
+                        <span class="fw-bold tracking-tight">PUPPET</span>
                     </a>
                     <p class="text-muted mb-4 opacity-75">Bringing the magic of hand-crafted storytelling to the grand
                         stage. From classic marionettes to modern fantasies, every string tells a story.</p>
@@ -166,7 +171,7 @@
                 </div>
                 <!-- Col 2: Navigation -->
                 <div class="col-lg-2 reveal" style="transition-delay: 0.1s">
-                    <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+                    <h5 class="fw-bold mb-4 ">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="index.html"
                                 class="text-muted text-decoration-none hover-warning">Home</a></li>
@@ -180,7 +185,7 @@
                 </div>
                 <!-- Col 3: Community/Resources -->
                 <div class="col-lg-2 reveal" style="transition-delay: 0.2s">
-                    <h5 class="fw-bold mb-4 text-white">The Stage</h5>
+                    <h5 class="fw-bold mb-4 ">The Stage</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="blog.html"
                                 class="text-muted text-decoration-none hover-warning">Blog</a></li>
@@ -194,18 +199,18 @@
                 </div>
                 <!-- Col 4: Newsletter Subscription -->
                 <div class="col-lg-4 reveal" style="transition-delay: 0.3s">
-                    <h5 class="fw-bold mb-4 text-white">Newsletter</h5>
+                    <h5 class="fw-bold mb-4 ">Newsletter</h5>
                     <p class="text-muted mb-4 opacity-75">Sign up for exclusive show alerts and theater news.</p>
                     <div class="input-group mb-3 bg-glass rounded-4 p-1">
                         <input type="email"
-                            class="form-control bg-transparent border-0 text-white placeholder-muted px-3"
+                            class="form-control bg-transparent border-0 placeholder-muted px-3"
                             placeholder="Enter your email...">
                         <button class="btn btn-warning rounded-4 px-4" type="button"><i
                                 class="bi bi-send-fill"></i></button>
                     </div>
                 </div>
             </div>
-            <hr class="my-5 border-white border-opacity-10 text-white">
+            <hr class="my-5 text-muted opacity-25">
             <div class="row align-items-center reveal" style="transition-delay: 0.4s">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <p class="mb-0 text-muted small">&copy; 2026 PUPPET Theater Company. All rights reserved.</p>
