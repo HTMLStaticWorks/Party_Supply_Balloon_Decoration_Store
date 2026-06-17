@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <defs>
+    <linearGradient id="popPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF75A9" />
+      <stop offset="100%" stop-color="#FF4D8D" />
+    </linearGradient>
+    <linearGradient id="popPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="popYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#FFD166" />
+    </linearGradient>
+  </defs>
+  <!-- Logo Icon Group -->
+  <g transform="translate(3, 4)">
+    <!-- Balloons string paths -->
+    <path d="M 14 21 Q 12 30, 15 36" stroke="#9CA3AF" stroke-width="0.8" fill="none" />
+    <path d="M 24 19 Q 26 28, 23 34" stroke="#9CA3AF" stroke-width="0.8" fill="none" />
+    <path d="M 19 25 Q 18 31, 20 38" stroke="#9CA3AF" stroke-width="0.8" fill="none" />
+    
+    <!-- Balloon 1 (Purple) -->
+    <circle cx="14" cy="14" r="7" fill="url(#popPurple)" />
+    <polygon points="14,21 12,23 16,23" fill="#7C3AED" />
+    <!-- Highlight -->
+    <ellipse cx="12" cy="11" rx="2" ry="1" fill="#FFF" opacity="0.3" transform="rotate(-30 12 11)" />
+
+    <!-- Balloon 2 (Pink) -->
+    <circle cx="24" cy="12" r="7.5" fill="url(#popPink)" />
+    <polygon points="24,19 22,21 26,21" fill="#FF4D8D" />
+    <!-- Highlight -->
+    <ellipse cx="22" cy="9" rx="2" ry="1" fill="#FFF" opacity="0.3" transform="rotate(-30 22 9)" />
+
+    <!-- Balloon 3 (Blue) -->
+    <circle cx="19" cy="18" r="6.5" fill="#38BDF8" opacity="0.95" />
+    <polygon points="19,24 17,26 21,26" fill="#0284C7" />
+    <!-- Highlight -->
+    <ellipse cx="17.5" cy="15.5" rx="1.8" ry="0.9" fill="#FFF" opacity="0.4" transform="rotate(-30 17.5 15.5)" />
+
+    <!-- Party Hat -->
+    <g transform="translate(8, 0)">
+      <polygon points="22,33 32,33 27,20" fill="url(#popYellow)" stroke="#FF4D8D" stroke-width="0.5" />
+      <circle cx="27" cy="19" r="1.5" fill="#FF4D8D" />
+      <!-- Swirl on hat -->
+      <path d="M 24 30 Q 27 27, 30 30" stroke="#7C3AED" stroke-width="0.8" fill="none" />
+    </g>
+
+    <!-- Ribbon Element -->
+    <path d="M 8 32 Q 13 35, 18 32 T 28 34" stroke="#FFD166" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <path d="M 6 35 Q 12 32, 20 36" stroke="#FF4D8D" stroke-width="0.8" fill="none" stroke-linecap="round" />
+  </g>
+  
+  <!-- Text Elements (Color will be adjusted via CSS in light/dark theme using fill="currentColor" or explicit theme colors) -->
+  <text x="44" y="24" font-family="'Poppins', sans-serif" font-weight="600" font-size="14" fill="#FF4D8D" class="logo-text-primary">PartyPop</text>
+  <text x="44" y="38" font-family="'Poppins', sans-serif" font-weight="500" font-size="9.5" fill="#7C3AED" letter-spacing="0.8" class="logo-text-secondary">CELEBRATIONS</text>
+</svg>

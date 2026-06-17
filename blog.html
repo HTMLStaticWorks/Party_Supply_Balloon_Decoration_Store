@@ -2,109 +2,157 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <link rel="icon" type="image/png" href="assets/images/marionette-logo.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUPPET</title>
+    <title>Blog | PartyPop Celebrations</title>
+    <meta name="description" content="Read our celebration ideas, decoration tips, color theme guides, and eco-friendly balloon insights on the PartyPop Blog.">
+    
+    <!-- Bootstrap 5 & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="loading">
+    <!-- 🎭 JOYFUL CURTAIN OPENER -->
     <div class="curtain-container">
         <div class="curtain-side curtain-left"></div>
         <div class="curtain-side curtain-right"></div>
     </div>
 
+    <!-- 🛍️ STICKY HEADER -->
     <nav class="navbar navbar-expand-lg nav-puppet fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
-                <span class="fw-bold tracking-tight">PUPPET</span>
+                <img src="assets/images/logo.svg" alt="PartyPop Celebrations" style="max-height: 42px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span
-                    class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto-logical mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shows.html">Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    
+                    
                     <li class="nav-item"><a class="nav-link active" href="blog.html" aria-current="page">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="d-flex align-items-center ms-lg-4-logical mt-3 mt-lg-0">
-                    <a href="login.html"
-                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical">Login</a>
-                    <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
-                            id="rtl-toggle"><label class="form-check-label small" for="rtl-toggle">RTL</label></div>
-                    <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
-                            id="theme-toggle"><label class="form-check-label small" for="theme-toggle"><i
-                                class="bi bi-moon-stars"></i></label></div>
+                    <a href="login.html" class="btn btn-primary-pop me-3-logical btn-sm">Login</a>
+                    <div class="form-check form-switch me-3-logical">
+                        <input class="form-check-input" type="checkbox" id="rtl-toggle">
+                        <label class="form-check-label small" for="rtl-toggle">RTL</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="theme-toggle">
+                        <label class="form-check-label small" for="theme-toggle"><i class="bi bi-moon-stars"></i></label>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header
-        class="hero-section position-relative overflow-hidden d-flex align-items-center justify-content-center text-center">
-        <div class="stage-layer stage-depth-1 position-absolute w-100 h-100"
-            style="background: url('assets/images/blog-hero-v2.png') center/cover; opacity: 0.6;"></div>
-        <div class="stage-layer stage-depth-2 position-absolute w-100 h-100"
-            style="background: var(--puppet-gradient-stage);"></div>
-        <div class="position-absolute w-100 h-100 top-0 start-0 bg-dark opacity-50 z-2"></div>
-        <div class="container position-relative z-3 pt-5 reveal text-white text-shadow">
-            <span class="badge bg-warning text-dark px-3 py-2 mb-3 rounded-pill text-uppercase tracking-widest">THE
-                JOURNAL</span>
-            <h1 class="display-2 fw-bold mb-4">Theater <span class="text-warning">Chronicles</span></h1>
-            <p class="lead mb-5 opacity-75 max-width-600 mx-auto">Stories beyond the stage, reflections of the heart,
-                <br>and secrets from the artisan's desk.
-            </p>
+    <!-- 🎈 PREMIUM HERO SECTION -->
+    <header class="hero-section inner-hero overflow-hidden">
+        <div class="floating-balloons-container hero-balloons"></div>
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        
+        <div class="container hero-content position-relative z-3 pt-5 text-center">
+            <span class="badge-pop mb-3">The PartyPop Journal</span>
+            <h1 class="display-3 mb-4">Celebration <span class="text-warning">Inspiration</span> &amp; Ideas</h1>
+            <p class="lead opacity-75 max-width-600 mx-auto">Get premium styling tips, design secrets, color double-stuffing suggestions, and planning advice from our award-winning decorators.</p>
         </div>
     </header>
 
-    <!-- ??? SECTION 1: THE ARTISAN'S INK (Author Profile) -->
+    <!-- ⚙️ PREMIUM ARTICLES SECTION -->
     <section class="py-section">
         <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 reveal text-center text-lg-start">
-                    <div
-                        class="workshop-float rounded-5 overflow-hidden shadow-2xl border border-white border-opacity-10">
-                        <img src="assets/images/blog-author.png" alt="Author" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-7 reveal text-center text-lg-start" style="transition-delay: 0.2s">
-                    <span class="text-warning fw-bold text-uppercase small tracking-widest mb-3 d-block">Behind the
-                        Voice</span>
-                    <h2 class="display-4 fw-bold mb-4">The <span class="text-warning">Artisan's Ink</span></h2>
-                    <p class="lead text-muted mb-4">Every story in this journal is hand-crafted by our resident
-                        puppeteers and master carvers. We don't just write scripts; we write the legends of strings.</p>
-                    <div class="row g-4">
-                        <div class="col-xl-6">
-                            <div
-                                class="glass-pill p-3 d-flex flex-column flex-xl-row align-items-center text-center text-xl-start">
-                                <img src="assets/images/reviewer-elian.png" alt="Master Elian"
-                                    class="rounded-circle mb-3 mb-xl-0 me-xl-3" width="60" height="60"
-                                    style="object-fit: cover; border: 2px solid var(--puppet-accent);">
-                                <div>
-                                    <h4 class="h6 mb-1 fw-bold text-warning">Master Elian</h4>
-                                    <p class="small text-muted mb-0">30 Years of Wood & Words.</p>
+            <div class="text-center mb-5 reveal">
+                <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Latest Insights</span>
+                <h2 class="mb-3">Recent <span class="text-warning">Journal Entries</span></h2>
+                <p class="text-muted max-width-600 mx-auto">Stay up to date with the latest design themes, luxury balloon trends, and eco-friendly celebration guides.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog 1 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="premium-blog-card bg-glass border rounded-5 overflow-hidden h-100 d-flex flex-column">
+                        <div class="premium-blog-img-wrap position-relative">
+                            <img src="assets/images/hero-decoration.png" alt="Kids party balloon decor tips" class="w-100 object-fit-cover" style="height: 230px;">
+                            <span class="premium-blog-tag bg-glass border position-absolute bottom-3 start-3">Trends &amp; Colors</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Jun 15, 2026</span>
+                                <span class="text-muted opacity-50">•</span>
+                                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 5 Min Read</span>
+                            </div>
+                            <h3 class="h5 mb-3"><a href="contact.html" class="text-white text-decoration-none hover-primary">5 Trending Birthday Palettes for 2026</a></h3>
+                            <p class="text-muted small mb-4">Learn about double-stuffed pastel greens, dusty pinks, and metallic gold accents for kids and adult birthdays.</p>
+                            <div class="mt-auto pt-3 border-top border-opacity-10 d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=40&q=80" alt="Sophia Lee" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;">
+                                    <span class="small text-muted">Sophia Lee</span>
                                 </div>
+                                <a href="contact.html" class="premium-read-more">Read Story <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-xl-6">
-                            <div
-                                class="glass-pill p-3 d-flex flex-column flex-xl-row align-items-center text-center text-xl-start">
-                                <img src="assets/images/reviewer-thorne.png" alt="Scribe Thorne"
-                                    class="rounded-circle mb-3 mb-xl-0 me-xl-3" width="60" height="60"
-                                    style="object-fit: cover; border: 2px solid var(--puppet-accent);">
-                                <div>
-                                    <h4 class="h6 mb-1 fw-bold text-warning">Scribe Thorne</h4>
-                                    <p class="small text-muted mb-0">The Guardian of Tales.</p>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.1s;">
+                    <div class="premium-blog-card bg-glass border rounded-5 overflow-hidden h-100 d-flex flex-column">
+                        <div class="premium-blog-img-wrap position-relative">
+                            <img src="assets/images/wedding-decoration.png" alt="Wedding backdrop stage setups" class="w-100 object-fit-cover" style="height: 230px;">
+                            <span class="premium-blog-tag bg-glass border position-absolute bottom-3 start-3">Wedding Styling</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Jun 12, 2026</span>
+                                <span class="text-muted opacity-50">•</span>
+                                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 6 Min Read</span>
+                            </div>
+                            <h3 class="h5 mb-3"><a href="contact.html" class="text-white text-decoration-none hover-primary">Choosing the Perfect Wedding Backdrop</a></h3>
+                            <p class="text-muted small mb-4">An ultimate guide to combining luxurious silk drapery, floral clusters, and ambient fairytale lighting for grand stages.</p>
+                            <div class="mt-auto pt-3 border-top border-opacity-10 d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=40&q=80" alt="Marcus Chen" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;">
+                                    <span class="small text-muted">Marcus Chen</span>
                                 </div>
+                                <a href="contact.html" class="premium-read-more">Read Story <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="col-md-6 col-lg-4 reveal" style="transition-delay: 0.2s;">
+                    <div class="premium-blog-card bg-glass border rounded-5 overflow-hidden h-100 d-flex flex-column">
+                        <div class="premium-blog-img-wrap position-relative">
+                            <img src="assets/images/baby-shower-decoration.png" alt="Eco friendly biodegradable balloons" class="w-100 object-fit-cover" style="height: 230px;">
+                            <span class="premium-blog-tag bg-glass border position-absolute bottom-3 start-3">Sustainability</span>
+                        </div>
+                        <div class="p-4 flex-grow-1 d-flex flex-column">
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Jun 08, 2026</span>
+                                <span class="text-muted opacity-50">•</span>
+                                <span class="small text-muted"><i class="bi bi-clock me-1"></i> 4 Min Read</span>
+                            </div>
+                            <h3 class="h5 mb-3"><a href="contact.html" class="text-white text-decoration-none hover-primary">Why Biodegradable Latex Balloons Matter</a></h3>
+                            <p class="text-muted small mb-4">At PartyPop Celebrations, we care about the environment. Read about our 100% natural, biodegradable latex practices.</p>
+                            <div class="mt-auto pt-3 border-top border-opacity-10 d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=40&q=80" alt="Sophia Lee" class="rounded-circle" style="width: 28px; height: 28px; object-fit: cover;">
+                                    <span class="small text-muted">Sophia Lee</span>
+                                </div>
+                                <a href="contact.html" class="premium-read-more">Read Story <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -113,146 +161,246 @@
         </div>
     </section>
 
-    <!-- ??? SECTION 2: DIGITAL WORKSHOPS (Redesigned Split Layout) -->
-    <section class="py-section bg-secondary-stage overflow-hidden">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7 reveal">
-                    <div class="video-card shadow-2xl border border-white border-opacity-10">
-                        <img src="assets/images/blog-workshop.png" alt="Workshop Video" class="img-fluid">
-                        <div class="position-absolute top-50 start-50 translate-middle">
-                            <a href="#" class="btn btn-warning btn-lg p-4 rounded-circle shadow-xl"><i
-                                    class="bi bi-play-fill fs-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 reveal text-center text-lg-start" style="transition-delay: 0.2s">
-                    <span class="text-warning fw-bold text-uppercase small tracking-widest mb-3 d-block">MASTER THE
-                        STRINGS</span>
-                    <h2 class="display-5 fw-bold mb-4">Master the Art of <br><span class="text-warning">Digital
-                            Workshops</span></h2>
-                    <p class="lead text-muted mb-4">Learn the secrets of the masters from the comfort of your own home.
-                        Our resident artisans have crafted a series of high-detail video lessons for all skill levels.
-                    </p>
-                    <div class="row g-3 mb-5">
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start"><i
-                                    class="bi bi-check2-circle text-warning fs-4 me-3"></i><span>The Secret Tilt
-                                    Technique</span></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start"><i
-                                    class="bi bi-check2-circle text-warning fs-4 me-3"></i><span>String Tension &
-                                    Balance</span></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start"><i
-                                    class="bi bi-check2-circle text-warning fs-4 me-3"></i><span>Character Voice &
-                                    Breath</span></div>
-                        </div>
-                    </div>
-                    <button class="btn btn-warning rounded-pill px-5 py-3 fw-bold text-dark shadow-lg btn-hover-highlight">Access Full
-                        Library</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ?? SECTION 3: THE GLOBAL LETTER (Newsletter) -->
-    <section class="py-section bg-curtain-texture text-white">
-        <div class="container text-center reveal envelope-float">
-            <img src="assets/images/blog-newsletter.png" alt="Newsletter"
-                class="img-fluid rounded-4 mb-4 mb-md-5 shadow-2xl" style="max-width: 100%; width: 400px;">
-            <h2 class="display-3 fw-bold mb-4">The Global Letter</h2>
-            <p class="lead mb-4 mb-md-5 opacity-75 max-width-600 mx-auto">Subscribe to our weekly scroll and receive
-                exclusive
-                show spoilers, discount threads, and magical postcards from the stage.</p>
-            <form class="d-flex flex-column flex-md-row justify-content-center gap-3 mx-auto" style="max-width: 500px;">
-                <input type="email"
-                    class="form-control form-control-lg bg-white bg-opacity-10 border-white border-opacity-20 text-white rounded-pill px-4"
-                    placeholder="Your parchment address...">
-                <button
-                    class="btn btn-warning btn-lg px-5 fw-bold text-dark rounded-pill btn-hover-highlight">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- ?? NEW 4-COLUMN FOOTER (PUPPET THEATER) -->
-    <footer class="py-5 mt-5 border-top">
+    <!-- 🏷️ SECTION 1: POPULAR CATEGORIES & TRENDING TAG CLOUD -->
+    <section class="py-section bg-glass border-y border-opacity-10">
         <div class="container">
             <div class="row g-5">
-                <!-- Col 1: Branding & Socials -->
-                <div class="col-lg-4 reveal">
-                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
-                        <img src="assets/images/marionette-logo.png" alt="Puppet Logo" width="40" class="me-2-logical">
-                        <span class="fw-bold tracking-tight">PUPPET</span>
-                    </a>
-                    <p class="text-muted mb-4 opacity-75">Bringing the magic of hand-crafted storytelling to the grand
-                        stage. From classic marionettes to modern fantasies, every string tells a story.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-outline-warning rounded-circle p-2 social-bounce-item"><i
-                                class="bi bi-twitter-x"></i></a>
+                <!-- Left Column: Categories Grid -->
+                <div class="col-lg-6 reveal">
+                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Explore Topics</span>
+                    <h2 class="mb-4">Popular <span class="text-warning">Categories</span></h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-gift-fill"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Birthday Ideas</span>
+                                        <span class="x-small text-muted">14 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-heart-fill"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Wedding Styling</span>
+                                        <span class="x-small text-muted">9 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-balloon-fill"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Balloon Artistry</span>
+                                        <span class="x-small text-muted">18 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-briefcase-fill"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Corporate Events</span>
+                                        <span class="x-small text-muted">7 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-emoji-smile-fill"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Baby Showers</span>
+                                        <span class="x-small text-muted">12 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="blog-cat-card p-3 rounded-4 border bg-glass d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="cat-icon-wrap bg-primary-soft rounded-3 p-2 text-primary"><i class="bi bi-stars"></i></div>
+                                    <div>
+                                        <span class="h6 mb-0 d-block">Anniversary Setups</span>
+                                        <span class="x-small text-muted">6 Articles</span>
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted small"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Col 2: Navigation -->
-                <div class="col-lg-2 reveal" style="transition-delay: 0.1s">
-                    <h5 class="fw-bold mb-4 ">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html"
-                                class="text-muted text-decoration-none hover-warning">Home</a></li>
-                        <li class="mb-2"><a href="home-2.html"
-                                class="text-muted text-decoration-none hover-warning">Alternative Stage</a></li>
-                        <li class="mb-2"><a href="about.html"
-                                class="text-muted text-decoration-none hover-warning">About Us</a></li>
-                        <li class="mb-2"><a href="shows.html"
-                                class="text-muted text-decoration-none hover-warning">Shows</a></li>
-                    </ul>
-                </div>
-                <!-- Col 3: Community/Resources -->
-                <div class="col-lg-2 reveal" style="transition-delay: 0.2s">
-                    <h5 class="fw-bold mb-4 ">The Stage</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="blog.html"
-                                class="text-muted text-decoration-none hover-warning">Blog</a></li>
-                        <li class="mb-2"><a href="pricing.html"
-                                class="text-muted text-decoration-none hover-warning">Memberships</a></li>
-                        <li class="mb-2"><a href="faq.html"
-                                class="text-muted text-decoration-none hover-warning">FAQ</a></li>
-                        <li class="mb-2"><a href="contact.html"
-                                class="text-muted text-decoration-none hover-warning">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- Col 4: Newsletter Subscription -->
-                <div class="col-lg-4 reveal" style="transition-delay: 0.3s">
-                    <h5 class="fw-bold mb-4 ">Newsletter</h5>
-                    <p class="text-muted mb-4 opacity-75">Sign up for exclusive show alerts and theater news.</p>
-                    <div class="input-group mb-3 bg-glass rounded-4 p-1">
-                        <input type="email" class="form-control bg-transparent border-0 placeholder-muted px-3"
-                            placeholder="Enter your email...">
-                        <button class="btn btn-warning rounded-4 px-4" type="button"><i
-                                class="bi bi-send-fill"></i></button>
+                
+                <!-- Right Column: Tag Cloud -->
+                <div class="col-lg-6 reveal" style="transition-delay: 0.15s;">
+                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">What's Hot</span>
+                    <h2 class="mb-4">Trending <span class="text-warning">Tags</span></h2>
+                    
+                    <div class="d-flex flex-wrap gap-2 blog-tag-cloud">
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#OrganicBalloonArch</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#PastelAesthetic</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#FloralInstallation</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#LEDNeonBackdrops</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#TableStyling</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#EcoFriendlyLatex</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#GenderRevealSetup</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#ChromeMetallicBalloons</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#KidsPartyThemes</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#FairytaleLights</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#DessertPlinths</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#CorporateBranding</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#SequinPanels</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#ShimmerCurtains</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#MarqueeNumbers</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#EngagementDecor</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#OrganicGarlands</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary-pop rounded-pill px-3">#DIYPartyHacks</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- ✍️ SECTION 2: MEET OUR COLUMNISTS / STYLING EXPERTS -->
+    <section class="py-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Our Writers</span>
+                <h2 class="mb-3">Meet the <span class="text-warning">Styling Columnists</span></h2>
+                <p class="text-muted max-width-600 mx-auto">Get design insights, balloon art secrets, and party advice directly from our primary event decorators.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Columnist 1 -->
+                <div class="col-md-5 reveal">
+                    <div class="columnist-card p-4 rounded-5 border bg-glass d-flex align-items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sophia Lee" class="columnist-img">
+                        <div>
+                            <span class="badge-pop bg-warning mb-2 d-inline-block">Lead Decorator</span>
+                            <h4 class="h5 mb-1">Sophia Lee</h4>
+                            <p class="small text-muted mb-0">Specializes in organic installations, color double-stuffing tricks, and luxury backdrop trends.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columnist 2 -->
+                <div class="col-md-5 reveal" style="transition-delay: 0.15s;">
+                    <div class="columnist-card p-4 rounded-5 border bg-glass d-flex align-items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen" class="columnist-img">
+                        <div>
+                            <span class="badge-pop bg-primary mb-2 d-inline-block">Stage Architect</span>
+                            <h4 class="h5 mb-1">Marcus Chen</h4>
+                            <p class="small text-muted mb-0">Writes about structural floral frames, lighting safety, and grand entrance arch engineering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💡 SECTION 3: SUGGEST A TOPIC SPOTLIGHT -->
+    <section class="py-section bg-glass border-t border-opacity-10">
+        <div class="container text-center reveal">
+            <div class="max-width-600 mx-auto p-4 p-md-5 rounded-5 border bg-glass position-relative overflow-hidden">
+                <div class="gradient-blob blob-1" style="opacity: 0.1; width: 200px; height: 200px; top: -50px; right: -50px;"></div>
+                <div class="gradient-blob blob-2" style="opacity: 0.1; width: 200px; height: 200px; bottom: -50px; left: -50px;"></div>
+                
+                <span class="fs-1 text-primary mb-3 d-inline-block"><i class="bi bi-lightbulb-fill"></i></span>
+                <h2 class="mb-3">Have a Decorating <span class="text-warning">Question?</span></h2>
+                <p class="text-muted mb-4">
+                    Are you stuck planning colors for a theme event, or wondering how many balloons you need for an arch? Suggest a topic or send us your query. We will address it in our upcoming blog articles!
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="contact.html?subject=blog_suggestion" class="btn btn-primary-pop px-5 py-3">Submit Topic Idea</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛍️ FOOTER -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Col 1: Branding -->
+                <div class="col-lg-4 reveal">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <img src="assets/images/logo.svg" alt="PartyPop Celebrations" style="max-height: 40px;">
+                    </a>
+                    <p class="text-muted small mb-4">Making Every Celebration Unforgettable. Premium balloon arrangements, luxury stage setups, and customized party planning services.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 reveal" style="transition-delay: 0.1s;">
+                    <h5 class="h6 mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none small">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none small">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none small">Services</a></li>
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Packages</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- Col 3: Packages Link -->
+                <div class="col-lg-2 reveal" style="transition-delay: 0.2s;">
+                    <h5 class="h6 mb-4">Our Packages</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Birthday Package</a></li>
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Wedding Package</a></li>
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Baby Shower Package</a></li>
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Anniversary Setup</a></li>
+                        <li class="mb-2"><a href="packages.html" class="text-muted text-decoration-none small">Corporate Styling</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Newsletter -->
+                <div class="col-lg-4 reveal" style="transition-delay: 0.3s;">
+                    <h5 class="h6 mb-4">Newsletter</h5>
+                    <p class="text-muted small mb-4">Subscribe to receive celebration tips, party inspiration, and discount offer alerts.</p>
+                    <form onsubmit="alert('Thank you for subscribing to our newsletter!'); return false;">
+                        <div class="input-group mb-3 bg-glass rounded-4 p-1">
+                            <input type="email" class="form-control bg-transparent border-0 placeholder-muted px-3 small" placeholder="Enter your email..." required>
+                            <button class="btn btn-primary-pop rounded-4 px-4 py-2" type="submit"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
             <hr class="my-5 text-muted opacity-25">
-            <div class="row align-items-center reveal" style="transition-delay: 0.4s">
+            
+            <div class="row align-items-center reveal" style="transition-delay: 0.4s;">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0 text-muted small">&copy; 2026 PUPPET Theater Company. All rights reserved.</p>
+                    <p class="mb-0 text-muted small">&copy; 2026 PartyPop Celebrations. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="faq.html" class="text-muted text-decoration-none small mx-3 hover-warning">FAQ</a>
+                    <a href="privacy.html" class="text-muted text-decoration-none small mx-3">Privacy Policy</a>
                     <span class="text-muted opacity-25">|</span>
-                    <a href="contact.html" class="text-muted text-decoration-none small mx-3 hover-warning">Contact
-                        Support</a>
+                    <a href="terms.html" class="text-muted text-decoration-none small mx-3">Terms & Conditions</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
