@@ -22,7 +22,7 @@
     </div>
 
     <!-- 🛍️ STICKY HEADER -->
-    <nav class="navbar navbar-expand-lg nav-puppet fixed-top">
+    <nav class="navbar navbar-expand-xl nav-puppet fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="assets/images/logo.svg" alt="PartyPop Celebrations" style="max-height: 42px;">
@@ -123,8 +123,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 reveal" style="transition-delay: 0.2s">
-                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Our Method</span>
-                    <h2 class="mb-4">The Celebration <span class="text-warning">Design Lab</span></h2>
+                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2 text-center text-lg-start">Our Method</span>
+                    <h2 class="mb-4 text-center text-lg-start">The Celebration <span class="text-warning">Design Lab</span></h2>
                     <p class="lead text-muted mb-4">
                         We don't just blow up balloons. Our Design Lab creates 3D layout digital rendering mockups of your chosen venue so you can visualize the exact theme, spacing, and colors before setup.
                     </p>
@@ -133,7 +133,9 @@
                         <li>Detailed venue size and height optimization</li>
                         <li>Integration of floral and custom neon lighting</li>
                     </ul>
-                    <a href="contact.html" class="btn btn-primary-pop px-4 py-2">Consult with a Designer</a>
+                    <div class="text-center text-lg-start">
+                        <a href="contact.html" class="btn btn-primary-pop px-4 py-2">Consult with a Designer</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,6 +162,179 @@
         </div>
     </section>
 
+    <!-- 🎨 PALETTE CHOOSER (Interactive Theme Previewer) -->
+    <section class="py-section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Color Doubling Magic</span>
+                <h2 class="mb-3">Choose Your <span class="text-warning">Party Vibe</span></h2>
+                <p class="text-muted max-width-600 mx-auto">Click a theme below to preview the premium custom double-stuffed balloon palette curated by our design team.</p>
+            </div>
+            
+            <div class="row align-items-center g-5">
+                <!-- Palette Display Panel -->
+                <div class="col-lg-5 reveal">
+                    <div class="p-5 bg-glass border border-opacity-10 rounded-5 text-center shadow-2xl position-relative overflow-hidden" style="min-height: 300px;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient opacity-10" id="vibe-bg" style="background: linear-gradient(135deg, #FFD2E3, #FEF3C7);"></div>
+                        
+                        <h4 class="mb-4 position-relative z-2" id="vibe-title">Pastel Dream</h4>
+                        
+                        <!-- Balloon Color Circles -->
+                        <div class="d-flex justify-content-center gap-3 mb-4 position-relative z-2">
+                            <div class="rounded-circle shadow-lg" id="color-circle-1" style="width: 60px; height: 60px; background: #FFD2E3; border: 3px solid rgba(255,255,255,0.5); transition: background 0.4s ease;"></div>
+                            <div class="rounded-circle shadow-lg" id="color-circle-2" style="width: 60px; height: 60px; background: #E0E7FF; border: 3px solid rgba(255,255,255,0.5); transition: background 0.4s ease;"></div>
+                            <div class="rounded-circle shadow-lg" id="color-circle-3" style="width: 60px; height: 60px; background: #FEF3C7; border: 3px solid rgba(255,255,255,0.5); transition: background 0.4s ease;"></div>
+                        </div>
+                        
+                        <p class="text-muted small mb-0 position-relative z-2" id="vibe-description">
+                            Soft, whimsical, and elegant double-stuffed pastel colors that reflect light beautifully. Perfect for baby showers, first birthdays, and bridal brunches.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Interactive Theme Buttons -->
+                <div class="col-lg-7 reveal" style="transition-delay: 0.2s">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <button onclick="changeVibe('Pastel Dream', ['#FFD2E3', '#E0E7FF', '#FEF3C7'], 'Soft, whimsical, and elegant double-stuffed pastel colors that reflect light beautifully. Perfect for baby showers, first birthdays, and bridal brunches.', 'linear-gradient(135deg, #FFD2E3, #FEF3C7)')" class="btn vibe-btn w-100 p-4 rounded-4 text-start active-vibe-btn">
+                                <h5 class="mb-1 text-primary"><i class="bi bi-cloud-sun-fill me-2"></i>Pastel Dream</h5>
+                                <span class="small text-muted">Blush Pink, Lavender & Buttercream</span>
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button onclick="changeVibe('Midnight Luxury', ['#0F172A', '#F59E0B', '#64748B'], 'Bold and dramatic styling with royal navy, rich gold, and slate accents. Ideal for late-night galas, corporate anniversaries, and VIP lounges.', 'linear-gradient(135deg, #0F172A, #F59E0B)')" class="btn vibe-btn w-100 p-4 rounded-4 text-start">
+                                <h5 class="mb-1"><i class="bi bi-moon-stars-fill me-2"></i>Midnight Luxury</h5>
+                                <span class="small text-muted">Deep Navy, Metallic Gold & Slate</span>
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button onclick="changeVibe('Rose Gold Glam', ['#FDA4AF', '#F1F5F9', '#F43F5E'], 'A chic, modern palette featuring metallic rose gold, crisp white, and deep raspberry. A crowd favorite for sweet sixteens and bridal parties.', 'linear-gradient(135deg, #FDA4AF, #F43F5E)')" class="btn vibe-btn w-100 p-4 rounded-4 text-start">
+                                <h5 class="mb-1"><i class="bi bi-gem me-2"></i>Rose Gold Glam</h5>
+                                <span class="small text-muted">Rose Gold, Pearl White & Fuchsia</span>
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button onclick="changeVibe('Tropical Safari', ['#10B981', '#F59E0B', '#FFFBEB'], 'Vibrant shades of emerald green, goldenrod, and soft cream paired with artificial palm leaves. Perfect for outdoor parties and pool celebrations.', 'linear-gradient(135deg, #10B981, #F59E0B)')" class="btn vibe-btn w-100 p-4 rounded-4 text-start">
+                                <h5 class="mb-1"><i class="bi bi-tree-fill me-2"></i>Tropical Safari</h5>
+                                <span class="small text-muted">Emerald, Goldenrod & Soft Cream</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ❓ FAQ SECTION -->
+    <section class="py-section bg-glass">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left Column: FAQ Brand Card -->
+                <div class="col-lg-4 reveal text-center text-lg-start">
+                    <span class="text-primary fw-semibold text-uppercase tracking-wider d-block mb-2">Got Questions?</span>
+                    <h2 class="mb-4">Frequently Asked <span class="text-warning">Answers</span></h2>
+                    <p class="text-muted mb-4">
+                        Everything you need to know about our premium balloon installations, custom backdrops, setup timings, and cleanup services.
+                    </p>
+                    <div class="p-4 bg-glass border border-opacity-10 rounded-4 d-inline-block text-start w-100 max-width-400">
+                        <h5 class="h6 mb-2"><i class="bi bi-chat-heart-fill text-primary me-2"></i>Need Custom Styling?</h5>
+                        <p class="small text-muted mb-3">Get a tailored quote for complex structural setups, giant backdrops, or themed brand activations.</p>
+                        <a href="contact.html" class="btn btn-primary-pop btn-sm w-100">Send an Inquiry</a>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Accordions -->
+                <div class="col-lg-8 reveal" style="transition-delay: 0.2s">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item bg-transparent border-bottom border-opacity-10 mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-transparent text-theme fw-semibold py-3 px-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="box-shadow: none;">
+                                    How early should I book my event decoration?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-0 pt-0 pb-3 text-muted small">
+                                    We recommend booking at least 2 to 4 weeks in advance. For customized wood frame backdrops or complex acrylic props, we need adequate prep time to build and paint the structures.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item bg-transparent border-bottom border-opacity-10 mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-transparent text-theme fw-semibold py-3 px-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="box-shadow: none;">
+                                    Do you install outdoor balloon arches?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-0 pt-0 pb-3 text-muted small">
+                                    Yes! We construct heavy steel-weighted plates and frames for outdoor setups. Please note that balloons in direct sunlight may oxidize (lose shine) faster, so we recommend shade or setting up close to the event start.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item bg-transparent border-bottom border-opacity-10 mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-transparent text-theme fw-semibold py-3 px-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="box-shadow: none;">
+                                    What are double-stuffed balloons?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-0 pt-0 pb-3 text-muted small">
+                                    Double-stuffed balloons involve placing one balloon inside another to create completely unique, custom color tones (e.g. layering a metallic balloon inside a pastel balloon). It also increases durability and makes them completely opaque.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item bg-transparent border-bottom border-opacity-10 mb-3">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-transparent text-theme fw-semibold py-3 px-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="box-shadow: none;">
+                                    Do you handle teardown and cleanup?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-0 pt-0 pb-3 text-muted small">
+                                    Yes, we offer complete teardown services as an add-on. We will return to the venue post-event, safely dismantle the custom backdrop stands, pop the balloons, and clean up all decoration residues.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function changeVibe(title, colors, description, bgGradient) {
+            document.getElementById('vibe-title').innerText = title;
+            document.getElementById('vibe-description').innerText = description;
+            
+            document.getElementById('color-circle-1').style.backgroundColor = colors[0];
+            document.getElementById('color-circle-2').style.backgroundColor = colors[1];
+            document.getElementById('color-circle-3').style.backgroundColor = colors[2];
+            
+            document.getElementById('vibe-bg').style.background = bgGradient;
+            
+            // Toggle active state styling on buttons
+            const buttons = document.querySelectorAll('.vibe-btn');
+            buttons.forEach(btn => {
+                const header = btn.querySelector('h5');
+                if (header.innerText.trim().includes(title)) {
+                    btn.classList.add('active-vibe-btn');
+                    header.className = 'mb-1 text-primary';
+                } else {
+                    btn.classList.remove('active-vibe-btn');
+                    header.className = 'mb-1';
+                }
+            });
+        }
+    </script>
+
     <!-- 👥 TESTIMONIALS & STATS -->
     <section class="py-section bg-dark text-white text-center position-relative overflow-hidden">
         <div class="floating-balloons-container"></div>
@@ -168,24 +343,24 @@
             <p class="lead mb-5 opacity-75 max-width-600 mx-auto">See why families and corporate event organizers trust PartyPop Celebrations for their special milestones.</p>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
-                    <div class="p-4 bg-glass border border-opacity-10 rounded-4">
+                    <div class="p-4 bg-glass border border-opacity-10 rounded-4 h-100 d-flex flex-column">
                         <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
                         <p class="small mb-3">"Highly creative balloon columns! They set up everything in under two hours. Clean, professional, and friendly staff."</p>
-                        <span class="small fw-semibold text-primary">- Jessica P., Birthday Host</span>
+                        <span class="small fw-semibold text-primary mt-auto">- Jessica P., Birthday Host</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 bg-glass border border-opacity-10 rounded-4">
+                    <div class="p-4 bg-glass border border-opacity-10 rounded-4 h-100 d-flex flex-column">
                         <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
                         <p class="small mb-3">"The baby shower backdrop was beautiful and perfect. Our guests couldn't stop taking pictures. Excellent value!"</p>
-                        <span class="small fw-semibold text-primary">- Marcus K., Baby Shower</span>
+                        <span class="small fw-semibold text-primary mt-auto">- Marcus K., Baby Shower</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 bg-glass border border-opacity-10 rounded-4">
+                    <div class="p-4 bg-glass border border-opacity-10 rounded-4 h-100 d-flex flex-column">
                         <div class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
                         <p class="small mb-3">"Perfect corporate branding matching colors. Setup completed early in the morning. Great communication throughout."</p>
-                        <span class="small fw-semibold text-primary">- Linda R., Marketing Manager</span>
+                        <span class="small fw-semibold text-primary mt-auto">- Linda R., Marketing Manager</span>
                     </div>
                 </div>
             </div>
@@ -248,12 +423,14 @@
             
             <div class="row align-items-center reveal" style="transition-delay: 0.4s;">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0 text-muted small">&copy; 2026 PartyPop Celebrations. All rights reserved.</p>
+                    <p class="mb-0 text-muted small"><span dir="ltr">&copy; 2026 PartyPop Celebrations. All rights reserved.</span></p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <a href="privacy.html" class="text-muted text-decoration-none small mx-3">Privacy Policy</a>
-                    <span class="text-muted opacity-25">|</span>
-                    <a href="terms.html" class="text-muted text-decoration-none small mx-3">Terms & Conditions</a>
+                    <span dir="ltr">
+                        <a href="privacy.html" class="text-muted text-decoration-none small mx-3">Privacy Policy</a>
+                        <span class="text-muted opacity-25">|</span>
+                        <a href="terms.html" class="text-muted text-decoration-none small mx-3">Terms & Conditions</a>
+                    </span>
                 </div>
             </div>
         </div>
