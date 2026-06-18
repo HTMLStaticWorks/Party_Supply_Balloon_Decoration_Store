@@ -122,24 +122,9 @@ p, .paragraph, .lead {
 }
 
 /* 🎈 FLOATING BALLOON STYLING */
-.floating-balloons-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 1;
-    overflow: hidden;
-}
-
+.floating-balloons-container,
 .balloon-svg {
-    position: absolute;
-    bottom: -100px;
-    width: 45px;
-    height: 120px;
-    animation: rise-and-sway 18s linear infinite;
-    opacity: 0.7;
+    display: none !important;
 }
 
 @keyframes rise-and-sway {
@@ -298,6 +283,8 @@ footer .navbar-brand img {
     /* Align the active state underline under the text on mobile/tablet view */
     .nav-link {
         width: fit-content;
+        font-size: 0.95rem !important;
+        padding-block: 0.5rem !important;
     }
     
     /* Make the mobile hamburger menu full size (full width, edge-to-edge) */
@@ -315,8 +302,19 @@ footer .navbar-brand img {
     }
     
     .nav-puppet .navbar-collapse {
-        padding: 1rem 1.5rem;
+        padding: 2rem 1.5rem;
         border-top: 1px solid var(--glass-border);
+        transition: all 0.35s ease;
+    }
+
+    .nav-puppet .navbar-collapse.show {
+        height: calc(100vh - 72px) !important;
+        overflow-y: auto;
+    }
+
+    .nav-puppet .navbar-nav {
+        gap: 1rem;
+        margin-bottom: 2rem !important;
     }
 }
 
@@ -504,6 +502,20 @@ body[data-theme="dark"] .nav-puppet .navbar-toggler-icon {
     left: 0;
     color: var(--success);
     font-weight: bold;
+}
+
+[dir="rtl"] .package-highlight-list {
+    padding-right: 0;
+}
+
+[dir="rtl"] .package-highlight-list li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+[dir="rtl"] .package-highlight-list li::before {
+    left: auto;
+    right: 0;
 }
 
 
@@ -727,56 +739,15 @@ body[data-theme="dark"] .nav-puppet .navbar-toggler-icon {
 }
 
 /* 🎡 SCROLL REVEAL ANIMATIONS */
-
 .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
 }
 
 /* 🎭 CURTAIN TRANSITION */
 .curtain-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    display: flex;
-    pointer-events: none;
-    transition: opacity 0.8s ease-in-out;
-}
-
-.curtain-side {
-    flex: 1;
-    height: 100%;
-    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
-    transition: transform 1.2s cubic-bezier(0.85, 0, 0.15, 1);
-}
-
-.curtain-left {
-    transform-origin: left;
-}
-
-.curtain-right {
-    transform-origin: right;
-}
-
-body.loaded .curtain-left {
-    transform: scaleX(0);
-}
-
-body.loaded .curtain-right {
-    transform: scaleX(0);
-}
-
-body.loaded .curtain-container {
-    opacity: 0;
+    display: none !important;
 }
 
 /* 🌗 SWITCH INPUT STYLE */
@@ -1103,6 +1074,10 @@ footer .form-control::placeholder {
     background-color: var(--bg-dark);
 }
 
+.cta-theme-section .btn {
+    min-width: 260px;
+}
+
 /* Light mode: swap to a warm soft gradient */
 body[data-theme="light"] .cta-theme-section {
     background: linear-gradient(135deg, #FFF0F6 0%, #F3EEFF 50%, #FFF5E4 100%);
@@ -1247,7 +1222,8 @@ body[data-theme="light"] .cta-theme-section .btn-outline-light:hover {
     gap: 0;
     position: relative;
     overflow-x: auto;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .about-timeline-item {
@@ -2122,8 +2098,54 @@ html[dir="rtl"] .office-details-col .me-3 {
     margin-right: 0 !important;
 }
 
+/* ============================================
+   ❓ FAQ SECTION RTL FIXES
+============================================ */
+/* Global RTL Accordion Overrides */
+html[dir="rtl"] .accordion-button {
+    direction: rtl !important;
+    text-align: right !important;
+    unicode-bidi: plaintext !important;
+}
 
+html[dir="rtl"] .accordion-button::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
 
+html[dir="rtl"] .accordion-body {
+    direction: rtl !important;
+    text-align: right !important;
+    unicode-bidi: plaintext !important;
+}
 
+/* FAQ Brand column text alignment and direction */
+html[dir="rtl"] .faq-brand-col,
+html[dir="rtl"] .faq-brand-col .lead,
+html[dir="rtl"] .faq-brand-col span,
+html[dir="rtl"] .faq-brand-col h2,
+html[dir="rtl"] .faq-brand-col .text-center,
+html[dir="rtl"] .faq-brand-col .text-center h5,
+html[dir="rtl"] .faq-brand-col .text-center p {
+    text-align: center !important;
+}
 
-
+html[dir="rtl"] .faq-brand-col .lead,
+html[dir="rtl"] .faq-brand-col span,
+html[dir="rtl"] .faq-brand-col h2,
+html[dir="rtl"] .faq-brand-col .text-center h5,
+html[dir="rtl"] .faq-brand-col .text-center p {
+    direction: rtl !important;
+    unicode-bidi: plaintext !important;
+}
+/* ============================================
+   🛍️ FOOTER SECTION RTL FIXES
+============================================ */
+@media (min-width: 768px) {
+    html[dir="rtl"] footer .text-md-start {
+        text-align: right !important;
+    }
+    html[dir="rtl"] footer .text-md-end {
+        text-align: left !important;
+    }
+}

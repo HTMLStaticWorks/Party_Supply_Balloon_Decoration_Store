@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('loaded');
     }, 400);
 
-    // 🎈 Dynamic Balloons
-    initBalloons();
+    // 🎈 Dynamic Balloons (Disabled)
+    // initBalloons();
 
     // 🎊 Dynamic Confetti
     initConfetti();
